@@ -1,2 +1,2 @@
 cd /home/ubuntu/workspace
-./pokemon.sh
+screen ./pokemon.sh
