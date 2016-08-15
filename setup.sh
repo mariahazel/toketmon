@@ -21,6 +21,7 @@ cronjob="0 * * * * $croncmd"
 ( crontab -l | grep -v "$croncmd" ; echo "$cronjob" ) | crontab -
 chmod +x run.sh
 chmod +x pokemon.sh
+
     }
 	
 function install () {
