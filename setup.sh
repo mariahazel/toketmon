@@ -18,7 +18,7 @@ echo "[+] Create Cron"
 
 croncmd="$path/run.sh"
 cronjob="0 * * * * $croncmd"
-( crontab -l | grep -v "$croncmd" ; echo "$cronjob" ) | crontab -)
+( crontab -l | grep -v "$croncmd" ; echo "$cronjob" ) | crontab -
 chmod +x run.sh
 chmod +x pokemon.sh
 service crond restart
